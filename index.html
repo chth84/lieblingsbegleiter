@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lieblingsbegleiter</title>
+  <meta name="description" content="Lieblingsbegleiter – Folge uns auf Instagram und Facebook.">
+  <meta property="og:title" content="Lieblingsbegleiter">
+  <meta property="og:description" content="Lieblingsbegleiter – Folge uns auf Instagram und Facebook.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/jpeg" href="./assets/logo.jpg">
+  <link rel="apple-touch-icon" href="./assets/logo.jpg">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page">
+    <main class="card" aria-labelledby="brand-heading">
+      <h1 id="brand-heading" class="sr-only">Lieblingsbegleiter</h1>
+
+      <div class="logo-wrap">
+        <img
+          src="./assets/logo.jpg"
+          alt="Lieblingsbegleiter Logo"
+          class="logo"
+          width="1024"
+          height="1024"
+          decoding="async"
+        >
+      </div>
+
+      <p class="tagline">
+        Schön, dass du hier bist. Folge uns für aktuelle Einblicke und Neuigkeiten.
+      </p>
+
+      <nav class="social-links" aria-label="Social-Media-Kanäle">
+        <a
+          href="https://www.instagram.com/lieblingsbegleiterch/?hl=de"
+          class="social-card social-card--instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Lieblingsbegleiter auf Instagram besuchen (öffnet in neuem Tab)"
+        >
+          <span class="social-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="ig-grad-base" cx="0.3" cy="1.05" r="1.2">
+                  <stop offset="0%" stop-color="#FFDD55"/>
+                  <stop offset="35%" stop-color="#FF543E"/>
+                  <stop offset="72%" stop-color="#C837AB"/>
+                </radialGradient>
+                <radialGradient id="ig-grad-top" cx="0.1" cy="0.05" r="0.85">
+                  <stop offset="0%" stop-color="#3771C8"/>
+                  <stop offset="45%" stop-color="#5851DB" stop-opacity="0.72"/>
+                  <stop offset="100%" stop-color="#C837AB" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <rect width="48" height="48" rx="12" fill="url(#ig-grad-base)"/>
+              <rect width="48" height="48" rx="12" fill="url(#ig-grad-top)"/>
+              <rect x="10.5" y="10.5" width="27" height="27" rx="7.5" stroke="#FFFFFF" stroke-width="3"/>
+              <circle cx="24" cy="24" r="6.6" stroke="#FFFFFF" stroke-width="3"/>
+              <circle cx="32" cy="16" r="1.8" fill="#FFFFFF"/>
+            </svg>
+          </span>
+          <span class="social-text">
+            <span class="social-name">Instagram</span>
+            <span class="social-handle">@lieblingsbegleiterch</span>
+          </span>
+          <span class="social-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a
+          href="https://www.facebook.com/Lieblingsbegleiter/"
+          class="social-card social-card--facebook"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Lieblingsbegleiter auf Facebook besuchen (öffnet in neuem Tab)"
+        >
+          <span class="social-icon" aria-hidden="true">
+            <svg viewBox="0 0 36 36" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16.3-15 17.8l-1-.8h-4l-1 .8z"
+                fill="#0866FF"
+              />
+              <path
+                d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0-7 2.5-7 7v4h-4.5v5H15v12.7c1 .2 2 .3 3 .3s2-.1 3-.3V23h4z"
+                fill="#FFFFFF"
+              />
+            </svg>
+          </span>
+          <span class="social-text">
+            <span class="social-name">Facebook</span>
+            <span class="social-handle">Lieblingsbegleiter</span>
+          </span>
+          <span class="social-arrow" aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; <span id="year">2026</span> Lieblingsbegleiter</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>
